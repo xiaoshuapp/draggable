@@ -1,0 +1,57 @@
+{
+  "name": "@xiaoshu/draggable",
+  "private": false,
+  "version": "1.0.0",
+  "files": [
+    "dist"
+  ],
+  "main": "./dist/draggable.umd.js",
+  "module": "./dist/draggable.mjs",
+  "exports": {
+    ".": {
+      "import": "./dist/draggable.mjs",
+      "require": "./dist/draggable.umd.js"
+    }
+  },
+  "scripts": {
+    "dev": "vite",
+    "build": "vue-tsc --noEmit && vite build",
+    "preview": "vite preview",
+    "prepare": "husky install",
+    "postinstall": "sh -c 'if [ command -v ./node_modules/.bin/husky ]; then ./node_modules/.bin/husky install; fi;'"
+  },
+  "dependencies": {
+    "@vueuse/core": "^8.7.5",
+    "@vueuse/head": "^0.7.6",
+    "sortablejs": "1.15.0",
+    "vue": "^3.2.25",
+    "vue-demi": "^0.13.1"
+  },
+  "devDependencies": {
+    "@commitlint/cli": "^17.0.3",
+    "@commitlint/config-conventional": "^17.0.3",
+    "@typescript-eslint/eslint-plugin": "^5.30.3",
+    "@typescript-eslint/parser": "^5.30.3",
+    "@vitejs/plugin-vue": "^2.3.3",
+    "@vue/eslint-config-prettier": "^7.0.0",
+    "@vue/eslint-config-typescript": "^11.0.0",
+    "eslint": "^8.19.0",
+    "eslint-config-prettier": "^8.5.0",
+    "eslint-config-standard": "^17.0.0",
+    "eslint-import-resolver-alias": "^1.1.2",
+    "eslint-plugin-html": "^6.2.0",
+    "eslint-plugin-import": "^2.26.0",
+    "eslint-plugin-n": "^15.2.3",
+    "eslint-plugin-prettier": "^4.2.1",
+    "eslint-plugin-promise": "^6.0.0",
+    "eslint-plugin-vue": "^9.1.1",
+    "husky": "^8.0.1",
+    "lint-staged": "^13.0.3",
+    "prettier": "^2.7.1",
+    "rollup": "^2.75.7",
+    "typescript": "^4.5.4",
+    "vite": "^2.9.9",
+    "vue-eslint-parser": "^9.0.3",
+    "vue-tsc": "^0.34.7"
+  }
+}
